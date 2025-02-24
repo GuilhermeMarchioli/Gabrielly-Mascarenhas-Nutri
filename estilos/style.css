@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+    --cor-01: ;
+    --cor-02: ;
+    --cor-03: ;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+div#fundo-gradiente {
+    width: 100%;
+    background-image: linear-gradient(to right, #D4FCE2, #E2FAEA);
+}
