@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+    --cor-01: ;
+    --cor-02: ;
+    --cor-03: ;
+}
+
+@media screen and (min-width: 992px) {
+
+    span#burguer {
+        display: none;
+    }
+    
+    menu {
+        display: inline-block;
+    }
+    
+    menu a {
+        display: inline;
+    }
+}
