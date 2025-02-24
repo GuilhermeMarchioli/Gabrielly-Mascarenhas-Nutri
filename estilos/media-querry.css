@@ -13,15 +13,21 @@
 
 @media screen and (min-width: 992px) {
 
+    /* Menu No Desktop */
+    header {
+        padding: 50px 50px;
+    }
+
     span#burguer {
         display: none;
     }
     
     menu {
-        display: inline-block;
+        display: none;
+    }
+
+    nav {
+        display: block;
     }
     
-    menu a {
-        display: inline;
-    }
 }

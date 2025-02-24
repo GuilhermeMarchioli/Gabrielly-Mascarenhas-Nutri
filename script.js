@@ -1,6 +1,6 @@
 function mudouTamanho() {
     if (window.innerWidth >= 768) {
-    itens.style.display = 'block'
+    itens.style.display = 'flex'
     } else {
         itens.style.display = 'none'
     }

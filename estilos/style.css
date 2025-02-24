@@ -20,8 +20,8 @@ html, body {
 
 div#fundo-gradiente {
     width: 100%;
-    height: 820px;
-    background-image: linear-gradient(to right, #D4FCE2, #E2FAEA);
+    height: 900px;
+    background-image: linear-gradient(to right, #c9f8de, #e2faf0);
 }
 
 header {
@@ -30,6 +30,32 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 20px 15px;
+}
+
+header > #logo:hover {
+    cursor: pointer;
+    transform: scale(120%);
+    transition: all 0.5s;
+}
+
+nav {
+    display: none;
+}
+
+nav a {
+    margin: 20px;
+    background-color:  transparent;
+    text-decoration: none;
+    border-radius: 20px;
+    color: #3cac6e;
+}
+
+nav a:hover {
+    padding: 10px 15px;
+    transition: all 1s;
+    color: white;
+    background-color: #7ed851;
+    background-image: linear-gradient(to bottom, #7ed851, #23d9b7);
 }
 
 span#burguer:hover {
