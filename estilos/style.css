@@ -104,11 +104,13 @@ header > menu a:hover {
 #gab > img {
     margin-top: 170px;
     width: 23%;
+    border: 5px solid #7ed851;
+    border-radius: 15px;
 }
 
 #gab > h2 {
     width: 600px;
-    margin-top: 300px;
+    margin-top: 200px;
 
     font-size: 2.3em;
     color: #0e8f4f;
