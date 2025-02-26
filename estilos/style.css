@@ -90,3 +90,26 @@ header > menu a:hover {
     color: white;
     transition: all 0.5s;
 }
+
+
+
+
+#gab {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#gab > img {
+    margin-top: 170px;
+    width: 23%;
+}
+
+#gab > h2 {
+    width: 600px;
+    margin-top: 300px;
+
+    font-size: 2.3em;
+    color: #0e8f4f;
+}
