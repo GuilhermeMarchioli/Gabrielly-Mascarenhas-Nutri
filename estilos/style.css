@@ -6,9 +6,10 @@
 }
 
 :root {
-    --cor-01: ;
-    --cor-02: ;
-    --cor-03: ;
+    --cor-01: #3cac6e;
+    --cor-02: #7ed851;
+    --cor-03: #23d9b7;
+    --cor-04: #0e8f4f;
 }
 
 html, body {
@@ -91,27 +92,27 @@ header > menu a:hover {
     transition: all 0.5s;
 }
 
-
-
-
-#gab {
+#HomeContent {
+    width: 100%;
+    height: 360px;
+    margin: auto;
+    padding: 20px;
+    padding-top: 150px;
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
+    flex-flow: column nowrap;
     align-items: center;
+    justify-content: center;
 }
 
-#gab > img {
-    margin-top: 170px;
-    width: 23%;
+#HomeContent > img {
     border: 5px solid #7ed851;
-    border-radius: 15px;
+    border-radius: 20px;
+    width: 280px;
+    margin: 20px;
 }
 
-#gab > h2 {
-    width: 600px;
-    margin-top: 200px;
-
-    font-size: 2.3em;
-    color: #0e8f4f;
+#HomeContent > h2 {
+    margin: 20px;
+    width: 320px;
+    color: var(--cor-04);
 }

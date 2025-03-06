@@ -11,11 +11,12 @@
     --cor-03: ;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 810px) {
 
     /* Menu No Desktop */
     header {
         padding: 50px 50px;
+        min-width: 800px;
     }
 
     span#burguer {
@@ -30,4 +31,10 @@
         display: block;
     }
     
+    #HomeContent {
+        padding-top: 250px;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-around;
+    }
 }
