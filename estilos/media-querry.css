@@ -30,11 +30,31 @@
     nav {
         display: block;
     }
+
+    #home {
+        height: 600px;
+    }
     
     #HomeContent {
-        padding-top: 250px;
+        padding-top: 400px;
         flex-flow: row nowrap;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-evenly;
+    }
+
+    #HomeContent h2 {
+        margin-left: 0px;
+    }
+
+    section#sobre {
+        margin-top: 0px;
+    }
+
+    section#sobre h1 {
+        font-size: 2em;
+    }
+
+    section#sobre p {
+        font-size: 1.4em;
     }
 }

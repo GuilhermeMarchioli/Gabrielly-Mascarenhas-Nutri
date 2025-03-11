@@ -3,6 +3,7 @@
 * {
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
 }
 
 :root {
@@ -19,10 +20,15 @@ html, body {
     scroll-behavior: smooth;
 }
 
+body {
+    overflow-x: hidden;
+    background-image: linear-gradient(to right, #c9f8de, #e2faf0);
+}
+
 section#home {
     width: 100%;
-    height: 900px;
-    background-image: linear-gradient(to right, #c9f8de, #e2faf0);
+    height: 850px;
+
 }
 
 header {
@@ -32,7 +38,8 @@ header {
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 15px;
+    padding: 20px 0px 20px 15px;
+
 }
 
 header > #logo:hover {
@@ -92,12 +99,13 @@ header > menu a:hover {
     transition: all 0.5s;
 }
 
+/* Home Page */
 #HomeContent {
     width: 100%;
     height: 360px;
     margin: auto;
     padding: 20px;
-    padding-top: 150px;
+    padding-top: 500px;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -112,7 +120,53 @@ header > menu a:hover {
 }
 
 #HomeContent > h2 {
-    margin: 20px;
-    width: 320px;
+    font-size: 2em;
+    text-align: ;
+    margin-top: 10px;
+    width: 400px;
     color: var(--cor-04);
+    margin-left: 26%;
+}
+
+/* Sobre Page */
+section#sobre {
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 150px;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: transparent;
+    z-index: 1;
+    max-width: 500px;
+}
+
+section#sobre::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border-radius: 34px; 
+    padding: 5px; 
+    background: linear-gradient(to right, #23d9b7, #7ed851);
+    -webkit-mask: linear-gradient(white 0 0) content-box, linear-gradient(white 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    z-index: -1;
+}
+
+section#sobre h1 {
+    font-size: 1.8em;
+    text-align: center;
+    padding: 10px;
+    color: var(--cor-04);
+}
+
+section#sobre > span#Nome {
+    color: var(--cor-02);
 }
