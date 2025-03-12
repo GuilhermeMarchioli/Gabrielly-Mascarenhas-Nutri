@@ -33,7 +33,7 @@ section#home {
 
 header {
     position: fixed;
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -50,6 +50,7 @@ header > #logo:hover {
 
 nav {
     display: none;
+    min-width: 100%;
 }
 
 nav a {
@@ -120,12 +121,17 @@ header > menu a:hover {
 }
 
 #HomeContent > h2 {
-    font-size: 2em;
-    text-align: ;
+    font-size: 1.9em;
     margin-top: 10px;
-    width: 400px;
+    max-width: 450px;
+    text-align: center;
     color: var(--cor-04);
-    margin-left: 26%;
+    
+}
+
+main {
+    width: 90%;
+    margin: auto;
 }
 
 /* Sobre Page */
@@ -141,7 +147,6 @@ section#sobre {
     border-radius: 30px;
     background-color: transparent;
     z-index: 1;
-    max-width: 500px;
 }
 
 section#sobre::before {
@@ -160,6 +165,10 @@ section#sobre::before {
     z-index: -1;
 }
 
+section#sobre img {
+    padding: 10px;
+}
+
 section#sobre h1 {
     font-size: 1.8em;
     text-align: center;
@@ -167,6 +176,18 @@ section#sobre h1 {
     color: var(--cor-04);
 }
 
-section#sobre > span#Nome {
-    color: var(--cor-02);
+section#sobre p {
+    padding: 8px 25px;
+    font-size: 1.1em;
+    text-align: justify;
+    color: #418d1b;
+}
+
+section#sobre span#Nome {
+    color: #7ed851;
+}
+
+section#sobre span {
+    font-weight: bold;
+    color: var(--cor-04);
 }
