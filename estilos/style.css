@@ -32,6 +32,7 @@ section#home {
 }
 
 header {
+    margin: auto;
     position: fixed;
     width: 100%;
     display: flex;
@@ -49,12 +50,14 @@ header > #logo:hover {
 }
 
 nav {
+    text-align: center;
     display: none;
-    min-width: 100%;
+    min-width: 130%;
+
 }
 
 nav a {
-    margin: 20px;
+    margin: auto 20px;
     background-color:  transparent;
     text-decoration: none;
     border-radius: 20px;
@@ -166,13 +169,9 @@ section#sobre::before {
     z-index: -1;
 }
 
-section#sobre aside {
-    width: 100%;
-}
-
 section#sobre img {
     padding: 10px;
-    padding-left: 70px;
+    padding-left: 60px;
 }
 
 section#sobre h1 {
@@ -196,4 +195,34 @@ section#sobre span#Nome {
 section#sobre span {
     font-weight: bold;
     color: var(--cor-04);
+}
+
+/* Serviços Page */
+section#serviços {
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+section#serviços > h1 {
+    color: var(--cor-04);
+    font-size: 2em;
+    text-align: center;
+}
+section#serviços article {
+    margin-top: 0px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section#serviços aside {
+    text-align: center;
+    margin: 40px 0;
+    width: 90%;
+    padding: 20px;
+    border-radius: 30px;
+    max-width: 700px;
 }
