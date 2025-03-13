@@ -74,6 +74,7 @@ span#burguer:hover {
 }
 
 header > menu {
+    display: none;
     position: absolute;
     left: 50%;
     margin-top: 50px;
@@ -163,6 +164,10 @@ section#sobre::before {
     -webkit-mask-composite: destination-out;
     mask-composite: exclude;
     z-index: -1;
+}
+
+section#sobre aside {
+    width: 100%;
 }
 
 section#sobre img {
