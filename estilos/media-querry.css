@@ -46,6 +46,7 @@
         margin-left: 0px;
     }
 
+    /* Sobre page */
     section#sobre {
         margin-top: 0px;
         flex-flow: row nowrap;
@@ -59,5 +60,19 @@
 
     section#sobre p {
         font-size: 1.4em;
+    }
+
+    /* Serviços Page */
+
+    section#serviços article {
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section#serviços aside {
+        display: inline-block;
+        width: calc(100% / 3 - 10px);
+        height: 300px;
     }
 }

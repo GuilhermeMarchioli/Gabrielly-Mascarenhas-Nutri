@@ -210,7 +210,9 @@ section#serviços > h1 {
     font-size: 2em;
     text-align: center;
 }
+
 section#serviços article {
+    width: 100%;
     margin-top: 0px;
     display: flex;
     flex-flow: column wrap;
@@ -219,10 +221,46 @@ section#serviços article {
 }
 
 section#serviços aside {
+    position: relative;
     text-align: center;
     margin: 40px 0;
-    width: 90%;
+    width: 100%;
     padding: 20px;
     border-radius: 30px;
     max-width: 700px;
+
+    background-color: transparent;
 }
+
+section#serviços aside::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border-radius: 34px; 
+    padding: 5px; 
+    background: linear-gradient(to right, #23d9b7, #7ed851);
+    -webkit-mask: linear-gradient(white 0 0) content-box, linear-gradient(white 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    z-index: -1;
+}
+
+section#serviços svg {
+    padding: 5px;
+}
+
+section#serviços aside h2 {
+    font-size: 1.2em;
+    padding: 10px;
+    font-weight: bold;
+    color: #0f6b3d;
+}
+
+section#serviços aside p {
+    font-size: 1em;
+    text-align: center;
+}
+
