@@ -71,8 +71,9 @@
     }
 
     section#serviços aside {
+        margin-right: 40px;
         display: inline-block;
-        width: calc(100% / 3 - 10px);
+        width: calc(100% / 3 - 40px);
         height: 300px;
     }
 }

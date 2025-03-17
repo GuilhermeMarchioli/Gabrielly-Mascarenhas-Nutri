@@ -40,6 +40,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 20px 0px 20px 15px;
+    z-index: 1;
 
 }
 
@@ -211,6 +212,17 @@ section#serviços > h1 {
     text-align: center;
 }
 
+section#serviços > p {
+    color: #0e8f4f;
+    margin: 10px;
+    text-align: center;
+}
+
+section#serviços h3 {
+    color: #0e8f4f;
+    text-align: center;
+}
+
 section#serviços article {
     width: 100%;
     margin-top: 0px;
@@ -221,15 +233,22 @@ section#serviços article {
 }
 
 section#serviços aside {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
     position: relative;
     text-align: center;
     margin: 40px 0;
     width: 100%;
+    height: 300px;
     padding: 20px;
     border-radius: 30px;
     max-width: 700px;
 
     background-color: transparent;
+    z-index: 0;
 }
 
 section#serviços aside::before {
@@ -262,5 +281,77 @@ section#serviços aside h2 {
 section#serviços aside p {
     font-size: 1em;
     text-align: center;
+    color: #2d9e82;
+}
+
+section#serviços aside:hover {
+    transition-duration: 1s;
+    background-image: linear-gradient(to right, #23d9b7, #7ed851);
+}
+
+section#serviços aside:hover h2 {
+    color: white;
+    transition: all 0.5s;
+}
+
+section#serviços aside:hover p {
+    color: white;
+    transition: all 0.5s;
+
+}
+
+section#serviços aside:hover svg {
+    background-color: white;
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+
+/* Carrossel de imagens */
+div#slider {
+    display: flex;
+    width: 100%;
+    height: 700px;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+div#imagens-slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+}
+
+.img-slider {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    border-radius: 10px;
+    transition: opacity .2s;
+}
+
+.on {
+    opacity: 1;
+}
+
+button#prev-button, button#next-button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+button#prev-button img, button#next-button img {
+    width: 100%;
+    height: 100%;
+}
+
+button#prev-button {
+    transform: rotate(180deg);
 }
 
