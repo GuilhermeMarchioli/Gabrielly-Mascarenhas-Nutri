@@ -236,7 +236,7 @@ section#serviços aside {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    align-items: center;
+    align-content: center;
 
     position: relative;
     text-align: center;
@@ -287,6 +287,7 @@ section#serviços aside p {
 section#serviços aside:hover {
     transition-duration: 1s;
     background-image: linear-gradient(to right, #23d9b7, #7ed851);
+    cursor: pointer;
 }
 
 section#serviços aside:hover h2 {
@@ -306,6 +307,25 @@ section#serviços aside:hover svg {
     transition: all 0.5s;
 }
 
+/* Reviews Page  */
+
+section#reviews {
+    padding: 15px;
+    margin-top: 150px;
+}
+
+section#reviews h1 {
+    font-size: 2em;
+    text-align: center;
+    padding: 15px;
+    color: var(--cor-04);
+}
+
+section#reviews p {
+    text-align: center;
+    color: #7ed851;
+}
+
 /* Carrossel de imagens */
 div#slider {
     display: flex;
@@ -314,7 +334,7 @@ div#slider {
     gap: 1rem;
     align-items: center;
     justify-content: center;
-
+    margin-top: 100px;
 
 }
 
@@ -324,14 +344,17 @@ div#imagens-slider {
     align-items: center;
     justify-content: center;
     width: 500px;
+    
 }
 
 .img-slider {
     opacity: 0;
     position: absolute;
     width: 100%;
-    border-radius: 10px;
-    transition: opacity .2s;
+    min-height: 300px;
+    max-height: 720px;
+    border-radius: 30px;
+    transition: opacity .5s;
 }
 
 .on {
@@ -339,8 +362,8 @@ div#imagens-slider {
 }
 
 button#prev-button, button#next-button {
-    width: 30px;
-    height: 30px;
+    width: 60px;
+    height: 60px;
     border: none;
     background-color: transparent;
     cursor: pointer;
