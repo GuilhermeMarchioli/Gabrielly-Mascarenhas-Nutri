@@ -311,7 +311,7 @@ section#serviços aside:hover svg {
 
 section#reviews {
     padding: 15px;
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 section#reviews h1 {
@@ -334,7 +334,7 @@ div#slider {
     gap: 1rem;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 60px;
 
 }
 
@@ -355,6 +355,7 @@ div#imagens-slider {
     max-height: 720px;
     border-radius: 30px;
     transition: opacity .5s;
+    border: 5px solid #7ed851;
 }
 
 .on {
@@ -378,3 +379,55 @@ button#prev-button {
     transform: rotate(180deg);
 }
 
+/* Contato Page */
+section#contato {
+    position: relative;
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
+    padding: 20px;
+
+    text-align: center;
+}
+
+section#contato::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border-radius: 34px; 
+    padding: 5px; 
+    background: linear-gradient(to right, #23d9b7, #7ed851);
+    -webkit-mask: linear-gradient(white 0 0) content-box, linear-gradient(white 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    z-index: -1;
+}
+
+section#contato h1 {
+    font-size: 1.8em;
+    color: var(--cor-04);
+    padding: 10px;
+}
+
+section#contato p {
+    color: #0e8f4f;
+    padding: 15px;
+}
+
+section#contato button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 100px;
+    background-image: linear-gradient(to right, #60bfae, #6cd97d);
+    color: white;
+}
+
+section#contato button:hover {
+    transform: scale(110%);
+    filter: opacity(60%);
+    cursor: pointer;
+    transition: all 0.5s;
+}

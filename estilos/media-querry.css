@@ -77,3 +77,25 @@
         height: 300px;
     }
 }
+
+/* Review Page */
+
+
+/* Contato Page */
+    section#contato {
+        width: 633px;
+    }
+
+    section#contato h1 {
+        font-size: 2em;
+    }
+
+    section#contato p {
+        padding: 20px;
+    }
+
+    section#contato button {
+        height: 50px;
+        width: 200px;
+        font-size: 1.1em;
+    }
