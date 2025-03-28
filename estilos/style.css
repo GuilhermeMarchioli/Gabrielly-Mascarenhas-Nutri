@@ -269,6 +269,7 @@ section#serviços aside::before {
 
 section#serviços svg {
     padding: 5px;
+    margin: auto;
 }
 
 section#serviços aside h2 {
@@ -334,7 +335,7 @@ div#slider {
     gap: 1rem;
     align-items: center;
     justify-content: center;
-    margin-top: 60px;
+    margin-top: 30px;
 
 }
 
@@ -363,11 +364,20 @@ div#imagens-slider {
 }
 
 button#prev-button, button#next-button {
-    width: 60px;
-    height: 60px;
+    width: 10px;
+    height: 10px;
     border: none;
     background-color: transparent;
     cursor: pointer;
+}
+
+button#prev-button svg, button#next-button svg {
+    height: 53px;
+    width: 53px;
+}
+
+button#next-button {
+    padding-bottom: 82px;
 }
 
 button#prev-button img, button#next-button img {
@@ -384,10 +394,11 @@ section#contato {
     position: relative;
     width: 90%;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 80px;
     padding: 20px;
 
     text-align: center;
+    max-width: 100%;
 }
 
 section#contato::before {
@@ -430,4 +441,20 @@ section#contato button:hover {
     filter: opacity(60%);
     cursor: pointer;
     transition: all 0.5s;
+}
+
+/* Footer */
+footer {
+    margin-top: 100px;
+    background-image: linear-gradient(to right, #23d9b7, #c7f9d3);
+    padding: 20px;
+}
+
+footer > h1 {
+    text-align: center;
+    color: white;
+    font-size: 1.6em;
+    font-weight: normal;
+    text-decoration: underline;
+    padding: 10px;
 }
