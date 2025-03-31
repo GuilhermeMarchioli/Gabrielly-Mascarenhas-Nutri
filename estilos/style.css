@@ -458,3 +458,24 @@ footer > h1 {
     text-decoration: underline;
     padding: 10px;
 }
+
+footer aside {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+footer svg {
+    width: 30px;
+    height: 30px;
+}
+
+footer svg:hover {
+    transform: scale(125%);
+    transition: 0.5s;
+}
