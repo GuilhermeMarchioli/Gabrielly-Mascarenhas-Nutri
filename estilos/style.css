@@ -330,6 +330,10 @@ section#serviços aside:hover svg {
     transition: all 0.5s;
 }
 
+section#serviços span {
+    font-weight: bold;
+}
+
 /* Reviews Page  */
 
 section#reviews {
