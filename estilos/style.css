@@ -505,3 +505,19 @@ footer svg:hover {
     transform: scale(125%);
     transition: 0.5s;
 }
+
+footer > p {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-size: 0.8em;
+    margin-top: 25px;
+}
+
+footer > p svg {
+    margin: 5px;
+    width: 16px;
+    height: 16px;
+}
